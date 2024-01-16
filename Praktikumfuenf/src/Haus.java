@@ -1,7 +1,7 @@
 
 public class Haus extends Gebaeude implements Einbau {
 
-	public Haus(String klingelanlage, String alarmanlage, String automatischerTueroffner) {
+	public Haus(String alarmanlage, String automatischerTueroffner) {
 		super("eingebaut", alarmanlage, automatischerTueroffner);
 		super.setTyp("Haus");
 	}
@@ -14,7 +14,7 @@ public class Haus extends Gebaeude implements Einbau {
 	}
 	
 	@Override
-	public void einbauen(String gebaeudeElement) {
+	public String einbauen(String gebaeudeElement) {
 		switch(gebaeudeElement) {
 		case "Alarmanlage":
 			super.setAlarmanlage("eingebaut");
@@ -27,7 +27,7 @@ public class Haus extends Gebaeude implements Einbau {
 			break;
 		default: gebaeudeElement = "Unbekanntes Objekt";
 		}
-		System.out.println(gebaeudeElement + " wurde eingebaut");
+		return gebaeudeElement + " wurde eingebaut";
 	}
 
 }

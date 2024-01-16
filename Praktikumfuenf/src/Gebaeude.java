@@ -13,7 +13,7 @@ abstract class Gebaeude {
 		return typ;
 	}
 
-	public void setTyp(String typ) {
+	void setTyp(String typ) {
 		this.typ = typ;
 	}
 
@@ -21,7 +21,7 @@ abstract class Gebaeude {
 		return klingelanlage;
 	}
 
-	public void setKlingelanlage(String klingelanlage) {
+	void setKlingelanlage(String klingelanlage) {
 		this.klingelanlage = klingelanlage;
 	}
 
@@ -29,7 +29,7 @@ abstract class Gebaeude {
 		return alarmanlage;
 	}
 
-	public void setAlarmanlage(String alarmanlage) {
+	void setAlarmanlage(String alarmanlage) {
 		this.alarmanlage = alarmanlage;
 	}
 
@@ -37,7 +37,7 @@ abstract class Gebaeude {
 		return automatischerTueroffner;
 	}
 
-	public void setAutomatischerTueroffner(String automatischerTueroffner) {
+	void setAutomatischerTueroffner(String automatischerTueroffner) {
 		this.automatischerTueroffner = automatischerTueroffner;
 	}
 	

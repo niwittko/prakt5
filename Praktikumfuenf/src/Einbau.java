@@ -1,6 +1,6 @@
 
 interface Einbau {
 
-	public void einbauen(String gebaeudeElement);
+	public String einbauen(String gebaeudeElement);
 	
 }
