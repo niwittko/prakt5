@@ -1,7 +1,7 @@
 
 public class Haus extends Gebaeude implements Einbau {
 
-	public Haus(String klingelanlage, String alarmanlage, String automatischerTueroffner) {
+	public Haus(String alarmanlage, String automatischerTueroffner) {
 		super("eingebaut", alarmanlage, automatischerTueroffner);
 		super.setTyp("Haus");
 	}
